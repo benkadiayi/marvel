@@ -1,0 +1,55 @@
+/* Nav styles */
+.ct-nav{
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Target main logo image */
+.navbar-brand img{
+    width: 300px;
+    height: 90px;
+    margin-left: 20px;
+}
+
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: black;
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    border: 2px solid blue;
+    border-radius: 11px;
+    margin-right: 0.2vw;
+}
+/* End of nav style */
+
+/* Start of Hero/Header section styles*/
+#header-text{
+    padding: 2vw;
+}
+.header-image{
+    width: 82%;
+    max-width: 100%;
+}
+/* End of Header section styles */
+
+/* Start of middle section styles*/
+#middle-text{
+    padding: 13vh;
+}
+#middle-text h2{
+    padding: 1.5vw;
+}
+/* End of middle section styles */
+
+/* Start of features section styles*/
+

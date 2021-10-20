@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--Flask Flashed Messages to User--><div class="container">{% with messages = get_flashed_messages(with_categories = true) %}{% if messages %}{% for cat,msg in messages %}{% if cat == 'user-created'%}<div class="alert alert-success">{{ msg }}<button type="button" class="close" data-dismiss = "alert">&times;</button></div>{% elif cat == 'auth-success' %}<div class="alert alert-success">{{ msg }}<button type="button" class="close" data-dismiss = "alert">&times;</button></div>{% endif %}{% endfor %}{% endif %}{% endwith %}</div>
+
+<div class="container">
+    <header class="row">
+        <div class="col-12 col-md-6" id='header-text'>
+            <h3>Let's build the future of marvel character collecting together!</h3>
+            <h5>Create an amazing API tool for car collecting developpers</h5>
+            <div><button class="btn btn-secondary">View Our Docs</button>
+                <button class="btn btn-secondary">Join Our Slack</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            
+        </div>
+    </header>
+
+    <section class="row text-center">
+        <div class="col-12" id="middle-text">
+            <h2>Display Your Character collection</h2>
+            
+        </div>
+    </section>
+
+    
+
+{% endblock content %}
